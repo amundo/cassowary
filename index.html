@@ -26,6 +26,25 @@
 <body>
   <h1>CASSOWARY</h1>
   <img src="cassowary.jpg" alt="Watch out y’all it’s a cassowary">
+
+
+<script type="module">
+let srcs = [
+  "cassowary.jpg",
+  "cassowary2.jpg",
+  "cassowary3.jpg"
+]
+
+let choice = s => {
+  let randomIndex = Math.floor(Math.random()*s.length)
+  return s[randomIndex]
+}
+
+let randomSrc = choice(srcs)
+
+document.querySelector('img').src = randomSrc
+
+</script>
 </body>
 
 </html>
